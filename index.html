@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniture Website</title>
+    <script src="https://kit.fontawesome.com/7008036abf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/furniture-website/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+
+
+    <!-- header section starts  -->
+
+    <header class="header">
+        <section class="flex">
+            <a href="#" class="logo">MOBEL</a>
+
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Features</a>
+                <a href="#">Shortcodes</a>
+                <a href="#">Shop</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header><br><br><br>
+
+
+
+
+    <!-- header section ends  -->
+
+
+
+
+    <!-- carousel slide section starts  -->
+
+    <div class="corusel">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="slide1 animate__animated animate__fadeInDown swiper-slide" style="animation-delay: .5s;">
+                    <div class="carousel-content">
+                        <h2>Mobile Ready</h2><br><br>
+                        <p>Unlimited Choices, Unbeatable prices, Free Shipping.<br> Furniture Catagory icon fonts</p>
+                        <br><br><br>
+                        <button>Get Inspired</button>
+                    </div>
+                </div>
+                <div class="slide2 animate__animated animate__fadeInLeft swiper-slide" style="animation-delay: .5s;">
+                    <div class="carousel-content">
+                        <h2>Modern Furniture Theme</h2><br><br>
+                        <p>Modern and powerful templete. <br>Clean design and responsive layout. Google fonts
+                            integration</p><br><br><br>
+                        <button>Buy this templete</button>
+                    </div>
+                </div>
+                <div class="slide3 animate__animated animate__fadeInUp swiper-slide" style="animation-delay: .5s;">
+                    <div class="carousel-content">
+                        <h2>Very Animate.CSS friend</h2><br><br>
+                        <p>Modern and powerful templete. <br>Clean design and responsive layout. Google fonts
+                            integration</p><br><br><br>
+                        <button>Buy this templete</button>
+                    </div>
+                </div>
+
+
+
+                <div class="nested-swiper">
+                    <div class="swiper nestedSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <i class="fa-solid fa-couch"></i>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            
+                </div>
+
+
+
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+
+
+            <!-- swiper in swiper starts  -->
+
+            <!-- <div class="nested-swiper">
+                <div class="swiper nestedSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div> -->
+
+
+
+
+            <!-- swiper in swiper ends -->
+
+
+
+
+        </div>
+
+    </div>
+    <!-- carousel slide section ends  -->
+    
+
+
+
+
+
+
+
+    <script>
+        let menuBtn = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .flex .navbar');
+
+
+
+        menuBtn.onclick = () => {
+            menuBtn.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".nestedSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
